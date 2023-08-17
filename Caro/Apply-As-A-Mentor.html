@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MentorMe - Apply as a Mentor</title>
+    <link rel="stylesheet" href="MentorFinder.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  </head>
+  <body>
+   <header>
+      <div class="logo">
+        <img src="images/favicon.png" alt="MentorMe">
+        <h1 class="headings">Apply as a Mentor</h1>
+      </div>
+      
+      <div id="google_translate_element"></div>
+      <script src ="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      <script>
+      function googleTranslateElementInit(){
+         new google.translate.TranslateElement(
+          {pageLangauge: 'en'},
+          'google_translate_element'
+         );
+      }
+      </script>
+      
+
+      <nav>
+        <ul>
+          <li><a href="Home.html">Home</a></li>    
+          <li><a href="Find-A-mentor.html">Mentors</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Apply-As-A-Mentor.html">Apply As A Mentor</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2 class="h2">Become a Mentor <br><br></h2>
+      <form>
+        <label for="name">Name<span class="red-asterisk">&#x2A;</span>:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email<span class="red-asterisk">&#x2A;</span>:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="area-of-expertise">Area of Expertise<span class="red-asterisk">&#x2A;</span>:</label>
+        <input type="text" id="area-of-expertise" name="area-of-expertise" required>
+        <label for="availability">Availability<span class="red-asterisk">&#x2A;</span>:</label>
+        <input type="text" id="availability" name="availability" required>
+        <label for="mode-of-delivery">Mode of Delivery<span class="red-asterisk">&#x2A;</span>:</label>
+        <select id="mode-of-delivery" name="mode-of-delivery" required>
+          <option value="online">Online</option>
+          <option value="in-person">In-person</option>
+        </select>
+        <label for="experience">Experience and Qualifications<span class="red-asterisk">&#x2A;</span>:</label>
+        <textarea id="experience" name="experience" required></textarea>
+        <label for="Why">Why do You Want to be A Mentor? (max 50 words):</label>
+        <textarea id=" why" name="Why" required></textarea>
+        <button type="submit">Submit Application</button>
+      </form>
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <img src="images/favicon.png" alt="Logo">
+          </div>
+        <div class="social-media">
+            <a href="images/fb.png"><i class="facebook"></i></a>
+            <a href="images/twitter.png"><i class="twitter"></i></a>
+            <a href="images/instar.png"><i class="instagram"></i></a>
+          </div>
+      <p>&copy; 2023 MentorMe. All rights reserved</p>
+    </footer>
+  </body>
+</html>

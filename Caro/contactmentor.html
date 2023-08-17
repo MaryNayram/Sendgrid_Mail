@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact-A-Mentor</title>
+  <link rel="stylesheet"  href="MentorFinder.css">
+</head>
+  <header>
+    <div class="logo">
+      <img src="images/favicon.png" alt="MentorMe">
+      <h1 class="headings">Contact Your Mentor</h1>
+    </div>
+    
+    <div id="google_translate_element"></div>
+    <script src ="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+    function googleTranslateElementInit(){
+       new google.translate.TranslateElement(
+        {pageLangauge: 'en'},
+        'google_translate_element'
+       );
+    }
+    </script>
+    
+
+
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>    
+        <li><a href="Find-A-mentor.html">Mentors</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Apply-As-A-Mentor.html">Apply As A Mentor</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+
+  <main>
+    <form>
+      <label for="name">Name<span class="red-asterisk">&#x2A;</span>:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="location">Location<span class="red-asterisk">&#x2A;</span>:</label>
+      <input type="text" id="location" name="location" required>
+      <label for="email">Email<span class="red-asterisk">&#x2A;</span>:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="availability">Availability<span class="red-asterisk">&#x2A;</span>:</label>
+      <input type="text" id="availability" name="availability" required>
+      <label for="mode-of-delivery">Mode of Meeting<span class="red-asterisk">&#x2A;</span>:</label>
+      <select id="mode-of-delivery" name="mode-of-delivery" required>
+        <option value="online">Online</option>
+        <option value="in-person">In-person</option>
+      </select>
+      <button type="submit">Submit Application</button>
+    </form>
+  </main>
+  <footer>
+    <div class="footer-logo">
+      <img src="images/favicon.png" alt="Logo">
+    </div>
+    <div class="social-media">
+      <a href="images/fb.png"><i class="fab fa-facebook"></i></a>
+      <a href="images/twitter.png"><i class="fab fa-twitter"></i></a>
+      <a href="images/instar.png"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2023 MentorMe. All rights reserved</p>
+  </footer>
+
+</body>
+</html>

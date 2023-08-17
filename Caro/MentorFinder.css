@@ -1,0 +1,345 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  position: relative;
+  padding-bottom: 0px;
+  padding-bottom: 200px;
+}
+
+header {
+  background-color: #bb72a3;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  height: 100px;
+  justify-content: center;
+}
+
+.logo img {
+  max-width: 10%;
+  height: 40px;
+  margin-top: 60px;
+  position: relative;
+  top: 5px;
+  left: -150px;
+}
+
+.logo {
+  justify-items: center;
+  width:400px ;
+}
+
+.logos {
+  justify-items: center;
+  width:40px ;
+  position: relative;
+  top: 5px;
+  left: -100px;
+}
+
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav li:first-child {
+  margin-left: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.heading {
+  text-align: right;
+  text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 460px;
+  height: auto;
+  margin-right: 80px;
+  margin-bottom: -50px;
+}
+
+.headings {
+  text-align: left;
+  margin-left: 0px;
+  margin-bottom: 50px;
+  position: relative;
+  top: 10px;
+  left: -140px;
+  margin-top: -10px;
+}
+
+.head{
+  text-align: left;
+  margin-left: 150px;
+  margin-bottom: 50px;
+  position: relative;
+  top: 10px;
+  left: -140px;
+  margin-top: -10px;
+  font-size: 170%;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin: 0;
+}
+
+.header h1 {
+  color: #fff;
+  font-size: 36px;
+  margin: 0;
+  text-align: left;
+  height: 400px;
+}
+
+.h2 {
+  color: crimson;
+  text-transform: capitalize;
+  font-size: 30px;
+  margin-right: 100px;
+}
+
+.welcome {
+  color: #fff;
+  font-size: 30px;
+  margin-right: auto;
+}
+
+.mentor1 {
+  width: 300px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+main p {
+  margin-right: 10px;
+}
+
+a {
+  display: block;
+  margin-top: 10px;
+  background-color: #bb72a3;
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #ebe3e8;
+}
+
+.team-members {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.team-member {
+  text-align: center;
+  margin: 0 2px;
+}
+
+.team-member img {
+  width: 160px;
+  margin-right: 20px;
+  display: block;
+  margin: 0 auto;
+  height: 170px;
+  border-radius: 50%;
+}
+
+.team-member h3 {
+  margin-top: 10px;
+}
+
+span {
+  color: crimson;
+}
+
+.about {
+  font-style: normal;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: auto;
+}
+
+label {
+  flex: 1 1 100%;
+  margin-bottom: 10px;
+}
+
+input,
+select,
+textarea {
+  flex: 1 1 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #85b8cc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #bb72a3;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin: 0 90% 0 0;
+  margin-top: -70%;
+}
+
+.footer-logo img {
+  max-width: 80%;
+  height: 50px;
+  margin-top: 800px;
+}
+
+.social-media {
+  display: flex;
+  margin-bottom: 0px;
+  margin: 0 0 0 80%;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #fff;
+  font-size: 24px;
+  transition: transform 0.3s;
+}
+
+
+.footer-logo {
+  float: left;
+  margin-right: 20px;
+}
+
+.footer-logo img {
+  height: 60px;
+  width: 70px;
+  margin-bottom: 300px;
+  position: relative;
+  top: 135px;
+  left: 70px;
+}
+
+footer {
+  background-color: #bb72a3;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  }
+
+/* Media Query for tablet/medium styles*/
+    @media only screen and (max-width: 767px) {
+      .logo img {
+      max-width: 20%; 
+      left: 0; 
+    }
+  
+  .logo {
+    width: 100%; 
+  }
+  
+  .logos {
+    left: 0; 
+  }
+
+  nav {
+    display: none; 
+  }
+
+  .heading {
+    width: 100%; 
+    margin-right: 0; 
+  }
+  
+  .headings {
+    left: 0; 
+  }
+
+  .head{
+    margin-left: 0; 
+    font-size: 150%; 
+  }
+
+  .header h1 {
+    font-size: 24px; 
+  }
+
+  .h2 {
+    font-size: 24px; 
+    margin-right: 0; 
+  }
+
+  .welcome {
+    font-size: 24px; 
+  }
+
+  .team-members {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .team-member img {
+    width: 120px; 
+    height: 120px; 
+    margin: 10px 0; 
+  }
+
+  .footer-logo img {
+    height: 40px; 
+    margin-bottom: 20px; 
+  }
+}
+  
