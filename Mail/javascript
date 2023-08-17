@@ -1,0 +1,42 @@
+const http = require("http");
+
+const PORT = 3000;
+
+http.createServer((req, res) => {
+
+			// Initializing sendgrid object
+			   const mailer = require("@sendgrid/mail");
+
+			   // Insert your API key here
+			      mailer.setApiKey("<ee01fd8389msh67e770da81f7a3dp1468d8jsn6a08c258ff82>");
+
+			      // Setting configurations
+			      	 const msg = {
+				       to: ["m.doh@alustudent.com", "nayrammayakosua@gmail.com"],
+				       	   from: "noreply@example.com",
+					   	 subject: "Message sent for demo purpose",
+						 	  html:
+									"<h1>New message from Geeksforgeeks</h1>
+
+<p>Some demo text from geeksforgeeks.</p>
+"
+	};
+
+	// Sending mail
+	   mailer.send(msg, function(err, json) {
+	   		    if (err) {
+			       	     console.log(err);
+
+					// Writing error message
+					   	   res.write("Can't send message sent");
+						   		    } else {
+
+								      // Writing success message
+								      	 	 res.write("Message sent");
+										 		    }
+													});
+
+													res.end();
+													})
+													.listen(PORT, () => console.log(`Server running on PORT : ${PORT}`));
+
